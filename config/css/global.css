@@ -1,0 +1,13 @@
+#overlay{
+  position: absolute;
+  margin-top: 40px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* .modal-body {
+  height: 200px !important;
+} */
