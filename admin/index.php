@@ -3,13 +3,13 @@
 ?>
   <div class="row">
     <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
+      <div class="card shadow">
+        <div class="card-header shadow" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
           <h5 class="card-title text-center">
             USERS
           </h5>
         </div>
-        <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
+        <!-- <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
         <table class="text-center table">
           <tbody>
             <tr>
@@ -52,7 +52,7 @@
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><b>Regular: 5</b></li>
           <li class="list-group-item"><b>Premium: 10</b></li>
-        </ul>
+        </ul> -->
         <div class="card-body">
           <div class="container">
             <div class="row">
@@ -65,13 +65,13 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
+      <div class="card shadow">
+        <div class="card-header shadow" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
           <h5 class="card-title text-center">
             MANGA
           </h5>
         </div>
-        <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
+        <!-- <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
         <table class="text-center table">
           <tbody>
             <tr>
@@ -114,7 +114,7 @@
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><b>Free: 132</b></li>
           <li class="list-group-item"><b>For Sale: 168</b></li>
-        </ul>
+        </ul> -->
         <div class="card-body">
           <div class="container">
             <div class="row">
@@ -127,13 +127,13 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
+      <div class="card shadow">
+        <div class="card-header shadow" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
           <h5 class="card-title text-center">
             SALES
           </h5>
         </div>
-        <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
+        <!-- <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
         <table class="text-center table">
           <tbody>
             <tr>
@@ -178,7 +178,7 @@
           <li class="list-group-item"><b>Genre 2: 89</b></li>
           <li class="list-group-item"><b>Genre 3: 20</b></li>
           <li class="list-group-item"><b>Total: 154</b></li>
-        </ul>
+        </ul> -->
         <div class="card-body">
           <div class="container">
             <div class="row">
