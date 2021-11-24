@@ -191,6 +191,21 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>
+          Category Tree
+        </h5>
+        <div id="treeview">
+
+        </div>
+        <div class="treeview">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 <?php
   include_once '../layout/admin/footer.html';
 ?>
