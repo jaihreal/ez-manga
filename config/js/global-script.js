@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // start => datatable
   $('#users-table').DataTable({
     "paging": true,
     "pagingType": "full_numbers",
@@ -11,4 +12,5 @@ $(document).ready(function () {
     // first_last_numbers: true,
   });
   $('.dataTables_length').addClass('bs-select');
+  // end => datatable
 });

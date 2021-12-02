@@ -1,196 +1,95 @@
 <?php
   include_once '../layout/admin/header.html';
 ?>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-header shadow" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-          <h5 class="card-title text-center">
-            USERS
-          </h5>
-        </div>
-        <!-- <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
-        <table class="text-center table">
-          <tbody>
-            <tr>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="1">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="2">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="3">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="4">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="5">
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="6">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="7">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="8">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="9">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="0">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <img class="card-img-top text-center" src="" alt="SHOW IN GALLERY FORMAT THE LATEST TOP 10 USERS WHO VISITED THE PAGE | 2 ROWS 5 COLUMN">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>Regular: 5</b></li>
-          <li class="list-group-item"><b>Premium: 10</b></li>
-        </ul> -->
-        <div class="card-body">
-          <div class="container">
-            <div class="row">
-              <div class="col text-center">
-                <a href="users.php" class="btn btn-outline-secondary">Details</a>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <section class="content pt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>44</h3>
+
+                <p>User Registrations</p>
               </div>
+              <div class="icon">
+                <i class="ion ion-person-add"></i>
+              </div>
+              <a href="users.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>150</h3>
+
+                <p>Manga Uploaded</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div>
+              <a href="manga.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                <p>Manga Sold</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>65</h3>
+
+                <p>Guests</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">Bar Chart</h3>
+
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart">
+                  <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                </div>
+              </div>
+              <!-- /.card-body -->
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-header shadow" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-          <h5 class="card-title text-center">
-            MANGA
-          </h5>
-        </div>
-        <!-- <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
-        <table class="text-center table">
-          <tbody>
-            <tr>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="1">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="2">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="3">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="4">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="5">
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="6">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="7">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="8">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="9">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="0">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <img class="card-img-top text-center" src="" alt="SHOW IN GALLERY FORMAT THE TOP 10 MOST VISITED MANGA | 2 ROWS 5 COLUMN">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>Free: 132</b></li>
-          <li class="list-group-item"><b>For Sale: 168</b></li>
-        </ul> -->
-        <div class="card-body">
-          <div class="container">
-            <div class="row">
-              <div class="col text-center">
-                <a href="manga.php" class="btn btn-outline-secondary">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow">
-        <div class="card-header shadow" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-          <h5 class="card-title text-center">
-            SALES
-          </h5>
-        </div>
-        <!-- <img class="card-img-top text-center" src="" alt="THIS COULD BE A GRAPH">
-        <table class="text-center table">
-          <tbody>
-            <tr>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="1">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="2">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="3">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="4">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="5">
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="6">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="7">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="8">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="9">
-              </td>
-              <td>
-                <img class="card-img-top text-center w-25" src="" alt="0">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <img class="card-img-top text-center" src="" alt="SHOW IN GALLERY FORMAT THE TOP 10 MOST SOLD MANGA | 2 ROWS 5 COLUMN">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>Genre 1: 45</b></li>
-          <li class="list-group-item"><b>Genre 2: 89</b></li>
-          <li class="list-group-item"><b>Genre 3: 20</b></li>
-          <li class="list-group-item"><b>Total: 154</b></li>
-        </ul> -->
-        <div class="card-body">
-          <div class="container">
-            <div class="row">
-              <div class="col text-center">
-                <a href="manga.php" class="btn btn-outline-secondary">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
 <?php
-  include_once '../layout/admin/footer.html';
+  $page = 'users';
+  include_once '../layout/admin/footer.php';
 ?>

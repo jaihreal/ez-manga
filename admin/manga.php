@@ -1,59 +1,123 @@
 <?php
   include_once '../layout/admin/header.html';
 ?>
-  <div class="row">
-    <div class="col-md-12 col-lg-12 col-sm-12">
-      <div class="card card-info shadow" style="height: 600px;">
-        <div class="card-header shadow p-3" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-            <div class="row d-flex">
-              <div class="col-md-6">
-                <h5 class="card-title text-light">
-                  MANGA
-                </h5> 
+<!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <section class="content pt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header p-2">
+                <ul class="nav nav-pills">
+                  <li class="nav-item"><a class="nav-link active" href="#manga-uploaded" data-toggle="tab">Manga Uploaded</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#manga-sold" data-toggle="tab">Manga Sold</a></li>
+                  <!-- <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li> -->
+                </ul>
               </div>
-              <div class="col-md-6 d-flex justify-content-end">
-                <div class="card-tool">
-                  <button class="btn btn-sm btn-primary">Add Manga</button>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="active tab-pane" id="manga-uploaded">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card pb-0">
+                          <div class="card-header">
+                            <h3 class="card-title">
+                              <h3 class="card-title font-weight-bold">MANGA LIST</h3>
+                            </h3>
+                            <div class="card-tools">
+                            </div>
+                          </div>
+                          <!-- /.card-header -->
+                          <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Title</th>
+                                  <th>Chapter</th>
+                                  <th>Genre</th>
+                                  <th>Status</th>
+                                  <th>Options</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr v-for="manga in mangas">
+                                  <td>{{ manga.id }}</td>
+                                  <td>{{ manga.title }}</td>
+                                  <td>{{ manga.chapter }}</td>
+                                  <td>{{ manga.genre }}</td>
+                                  <td>{{ manga.status }}</td>
+                                  <td>
+                                    <button class="btn btn-sm btn-outline-info">Edit</button>
+                                    <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="manga-sold">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card pb-0">
+                          <div class="card-header">
+                            <h3 class="card-title">
+                              <h3 class="card-title font-weight-bold">MANGA SOLD</h3>
+                            </h3>
+                            <div class="card-tools">
+                            </div>
+                          </div>
+                          <!-- /.card-header -->
+                          <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Title</th>
+                                  <th>Chapter</th>
+                                  <th>Genre</th>
+                                  <th>Status</th>
+                                  <th>Options</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr v-for="manga in mangas">
+                                  <!-- <td>{{ manga.id }}</td>
+                                  <td>{{ manga.title }}</td>
+                                  <td>{{ manga.chapter }}</td>
+                                  <td>{{ manga.genre }}</td>
+                                  <td>{{ manga.status }}</td>
+                                  <td>
+                                    <button class="btn btn-sm btn-outline-info">Edit</button>
+                                    <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                  </td> -->
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="tab-pane" id="settings">
+
+                  </div> -->
                 </div>
-              </div>
-            </div>
-        </div>
-        <div class="card-body p-2">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-lg-12 col-sm-12">
-                <table id="users-table" class="table table-sm table-striped table-hover table-responsive">
-                  <thead>
-                    <tr>
-                      <th scope="col" width="3%">#</th>
-                      <th scope="col" width="">Title</th>
-                      <th scope="col" width="20%">Genre</th>
-                      <th scope="col" width="10%">Chapter</th>
-                      <th scope="col" width="15%">Status</th>
-                      <th scope="col" width="15%">Option</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="(manga, index) in mangas">
-                      <th scope="row">{{index+1}}</th>
-                      <td>{{ manga.title }}</td>
-                      <td>{{ manga.genre }}</td>
-                      <td>{{ manga.chapter }}</td>
-                      <td>{{ manga.status }}</td>
-                      <td>
-                        <button class="btn btn-sm btn-outline-secondary">Edit</button>
-                        <button class="btn btn-sm btn-outline-danger">Delete</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 <?php
-  include_once '../layout/admin/footer.html';
+  $page = 'manga';
+  include_once '../layout/admin/footer.php';
 ?>

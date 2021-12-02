@@ -1,6 +1,8 @@
 <?php
+  session_start();
+  
   if (isset($_POST['btn-login'])) {
-    
+
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -18,6 +20,8 @@
       }
 
     } else {
-      echo 'Required fields is empty!';
+      // $_SESSION["alertMessage"] = "error";
+      // echo 'Required fields is empty!';
+      header('Location: ../index.php');
     }
   }

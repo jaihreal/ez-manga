@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #F1F1F1;
+  font-family: 'Roboto';
+}
+
+.navbar, .card-header {
+  background-color: #20283E;
+}
+.sidenav{
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  background-color: #CED2CC;
+  transition: 0.4s;
+}
+
+div.sidenav a, div, .footer {
+  color: #EA6A47;
+}
+
+div.sidenav ul.navbar-nav li.nav-item a.nav-link,
+div.sidenav a.navbar-brand div,
+div.sidenav footer.footer {
+  padding-left: 25px;
+}
+
+a.btn,
+.nav-link:not(.footer):active,
+.nav-link:not(.footer):focus,
+.nav-link:not(.footer):hover {
+  /* background-color: #FFFFFF26; */
+  background-color: #f7a189b9;
+  color: #FFFFFF;
+}
+
+.footer:hover {
+  color: #FFFFFF;
+}
+
+a.nav-link.footer {
+  width: fit-content;
+}
+
+.my-container {
+  margin-left: 280px;
+  transition: 0.4s;
+}
+
+.active-nav{
+  margin-left: -280px;
+}
+
+.active-cont {
+  margin-left: 0;
+}
+
+#menu-btn {
+  color: #FFFFFF;
+  background-color: #f7a189b9;
+}
+
+#menu-btn:focus {
+  box-shadow: 0 0 0 0.0rem #f7a189b9;
+}
+
+#menu-btn:hover, a.btn:hover {
+  background-color: #EA6A47;
+  box-shadow: 0 0 0 0.25rem #EA6A47;
+
+}
+
+a.btn {
+  border: 0;
+}
+
+.card {
+  border: 0;
+  border-radius: 10px;
+  height: 250px;
+}
+
+div.card-footer a.nav-link {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
