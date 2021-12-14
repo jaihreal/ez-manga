@@ -53,7 +53,7 @@
                 </button>
                 <div class="dropdown-content">
                 <div class="header">
-                  <h2>Mega Menu</h2>
+                  <h2></h2>
                 </div>
               </li>
             </ul>

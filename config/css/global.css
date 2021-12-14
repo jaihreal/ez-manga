@@ -13,6 +13,41 @@ h5.modal-title, h5.latest-released {
 /* start => carousel */
 .carousel-control-prev, .carousel-control-next {
   border: 0;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.41);
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 50;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
 /* end => carousel */
 
@@ -53,5 +88,7 @@ li.dropdown .dropdown-content .header {
   background: rgba(0,0,0,0.2);
   padding: 16px;
   color: white;
+  height: 50vh;
+  width: 50vw;
 }
 /* end =>browse drop-drown */
