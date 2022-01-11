@@ -62,7 +62,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane" id="manga-sold">
+                  <!-- <div class="tab-pane" id="manga-sold">
                     <div class="row">
                       <div class="col-12">
                         <div class="card pb-0">
@@ -73,7 +73,6 @@
                             <div class="card-tools">
                             </div>
                           </div>
-                          <!-- /.card-header -->
                           <div class="card-body">
                             <table id="example1" class="table table-bordered table-striped">
                               <thead>
@@ -88,7 +87,7 @@
                               </thead>
                               <tbody>
                                 <tr v-for="manga in mangas">
-                                  <!-- <td>{{ manga.id }}</td>
+                                  <td>{{ manga.id }}</td>
                                   <td>{{ manga.title }}</td>
                                   <td>{{ manga.chapter }}</td>
                                   <td>{{ manga.genre }}</td>
@@ -96,17 +95,15 @@
                                   <td>
                                     <button class="btn btn-sm btn-outline-info">Edit</button>
                                     <button class="btn btn-sm btn-outline-danger">Delete</button>
-                                  </td> -->
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
                           </div>
-                          <!-- /.card-body -->
                         </div>
-                        <!-- /.card -->
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- <div class="tab-pane" id="settings">
 
                   </div> -->

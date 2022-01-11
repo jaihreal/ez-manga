@@ -24,7 +24,7 @@ var app = new Vue({
       { id: 5 ,title: 'And! Lee ni Rubs Re Do!', genre: 'Gourmet|Political', chapter: '80', status: 'Ongoing'},
       { id: 6 ,title: 'Bim Bey Maquino (BBM)', genre: 'Political | History | Slice of Life', chapter: '105', status: 'Ongoing'},
       { id: 7 ,title: 'Manny Marie Packie: The Beninggging', genre: 'Sports | Political | Deities', chapter: '300', status: 'Completed'},
-      { id: 8 ,title: 'Boy Quibs Raipe Adventure', genre: 'Deities | NTR | Harem', chapter: '589', status: 'Ongoing'},
+      { id: 8 ,title: 'Boy Quibs Raipe Adventure', genre: 'Deities | Harem', chapter: '589', status: 'Ongoing'},
     ],
   },
   methods: {

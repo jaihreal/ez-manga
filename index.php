@@ -50,15 +50,15 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="card-body">
               <img src="./src/image-one-portrait.jpg" alt="image" width="150" height="200">
-              <h6 class="mt-1" >Naruto</h6>
-              <p class="m-0" >Chapt.r</p>
+              <h6 class="mt-1" >Naruto <span class="badge badge-secondary">New</span></h6>
+              <p class="m-0" >Chapter</p>
               <p class="m-0" >UPDATED JUST NOW</p>
             </div>
           </div>
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="card-body">
               <img src="./src/image-two-portrait.jpg" alt="image" width="150" height="200">
-              <h6 class="mt-1" >Astro Boy</h6>
+              <h6 class="mt-1" >Astro Boy <span class="badge badge-secondary">New</span></h6>
               <p class="m-0" >Chapter</p>
               <p class="m-0" >UPDATED JUST NOW</p>
             </div>
@@ -66,7 +66,7 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="card-body">
               <img src="./src/image-three-portrait.jpg" alt="image" width="150" height="200">
-              <h6 class="mt-1" >Title</h6>
+              <h6 class="mt-1" >Title <span class="badge badge-secondary">New</span></h6>
               <p class="m-0" >Chapter</p>
               <p class="m-0" >UPDATED JUST NOW</p>
             </div>
@@ -74,7 +74,7 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="card-body">
               <img src="./src/image-one-portrait.jpg" alt="image" width="150" height="200">
-              <h6 class="mt-1" >Naruto</h6>
+              <h6 class="mt-1" >Naruto <span class="badge badge-secondary">New</span></h6>
               <p class="m-0" >Chapter</p>
               <p class="m-0" >UPDATED JUST NOW</p>
             </div>
@@ -82,7 +82,7 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="card-body">
               <img src="./src/image-two-portrait.jpg" alt="image" width="150" height="200">
-              <h6 class="mt-1" >Astro Boy</h6>
+              <h6 class="mt-1" >Astro Boy <span class="badge badge-secondary">New</span></h6>
               <p class="m-0" >Chapter</p>
               <p class="m-0" >UPDATED JUST NOW</p>
             </div>
@@ -90,7 +90,7 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="card-body">
               <img src="./src/image-three-portrait.jpg" alt="image" width="150" height="200">
-              <h6 class="mt-1" >Title</h6>
+              <h6 class="mt-1" >Title <span class="badge badge-secondary">New</span></h6>
               <p class="m-0" >Chapter</p>
               <p class="m-0" >UPDATED JUST NOW</p>
             </div>
